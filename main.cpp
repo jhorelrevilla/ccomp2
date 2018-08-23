@@ -12,8 +12,7 @@ int modulo(int a, int b){
 int sum_m(int a,int b,int base){
     a+=b;
     int r;
-    cout<<a<<endl;
-    if(a>base ){
+    if(a>=base ){
         r=a-base;
     }
     if(a<0){
@@ -24,8 +23,7 @@ int sum_m(int a,int b,int base){
 int rest_m(int a,int b,int base){
     a-=b;
     int r;
-    cout<<a<<endl;
-    if(a>base ){
+    if(a>=base ){
         r=a-base;
     }
     if(a<0){
@@ -33,25 +31,42 @@ int rest_m(int a,int b,int base){
     }
     return r;
 }
-
+int mult_m(int a,int b,int base){
+    a*=b;
+    int r;
+    if(a>=base ){
+        r=a-base;
+    }
+    if(a<0){
+        r=base+a;
+    }
+    return r;
+}
 int main()
 {
     int a,b,c;
     char op;
     cout<<"ingresa el numero: ";cin>>a;
-    cout<<a<<" "<<"mod"<<endl;
+    cout<<a<<" mod"<<endl;
     cout<<"ingrese la base: ";cin>>c;
-    cout<<a<<" "<<"mod"<<" "<<c<<endl;
+    cout<<a<<" mod "<<c<<endl;
     cout<<"ingrese la operacion: ";cin>>op;
     switch (op){
         case '+':
-        cout<<"ingresa el numero: ";cin>>b;
-        cout<<a<<" "<<"mod"<<" "<<c<<"+"<<b<<" "<<"mod"<<" "<<c<<endl;
-        sum_m(a,b,c);
-        break;
+            cout<<"ingresa el numero: ";cin>>b;
+            cout<<a<<" mod "<<c<<" + "<<b<<" mod "<<c<<endl;
+            cout<<sum_m(a,b,c);
+            break;
         case '-':
-        break;
+            cout<<"ingresa el numero: ";cin>>b;
+            cout<<a<<" mod "<<c<<" - "<<b<<" mod "<<c<<endl;
+            cout<<rest_m(a,b,c);
+            break;
+        case '*':
+            cout<<"ingresa el numero: ";cin>>b;
+            cout<<a<<" mod "<<c<<" * "<<b<<" mod "<<c<<endl;
+            cout<<mult_m(a,b,c);
+            break;
     }
-    //cout<<sum_m(-1,-2,6);
     return 0;
 }
