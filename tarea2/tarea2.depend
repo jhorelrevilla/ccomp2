@@ -2,3 +2,14 @@
 1535156864 source:c:\users\jhorel\desktop\tarea2\main.cpp
 	<iostream>
 
+1535507564 source:c:\users\jhorel\documents\ccomp2\tarea2\main.cpp
+	<iostream>
+	"Cod.h"
+
+1535507365 source:c:\users\jhorel\documents\ccomp2\tarea2\src\cod.cpp
+	"Cod.h"
+
+1535507647 c:\users\jhorel\documents\ccomp2\tarea2\include\cod.h
+	<string.h>
+	<iostream>
+
