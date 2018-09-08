@@ -2,14 +2,17 @@
 1535156864 source:c:\users\jhorel\desktop\tarea2\main.cpp
 	<iostream>
 
-1535507564 source:c:\users\jhorel\documents\ccomp2\tarea2\main.cpp
+1535726107 source:c:\users\jhorel\documents\ccomp2\tarea2\main.cpp
 	<iostream>
 	"Cod.h"
 
-1535507365 source:c:\users\jhorel\documents\ccomp2\tarea2\src\cod.cpp
+1535727946 source:c:\users\jhorel\documents\ccomp2\tarea2\src\cod.cpp
 	"Cod.h"
 
-1535507647 c:\users\jhorel\documents\ccomp2\tarea2\include\cod.h
+1535728327 c:\users\jhorel\documents\ccomp2\tarea2\include\cod.h
 	<string.h>
+	<sstream>
+	<fstream>
+	<cstdlib>
 	<iostream>
 
