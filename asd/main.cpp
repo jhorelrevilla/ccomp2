@@ -97,6 +97,7 @@ int conv_1c(float &x){
 
 int main()
 {
+    /*
     float x;
     cout<<"ingresa el numero: ";cin>>x;
     cout<<"200: "<<conv_200(x)<<endl;
@@ -111,14 +112,17 @@ int main()
     cout<<"20c: "<<conv_2c(x)<<endl;
     cout<<"10c: "<<conv_1c(x)<<endl;
     ////////////////////////
-    int num,u,d,c,m;
-    u=num%10;
+    */
+
+    int numero,u,d,c,m;
+    cin>>numero;
+    u=numero%10;
     numero/=10;
-    d=num%10;
+    d=numero%10;
     numero/=10;
-    c=num%10;
+    c=numero%10;
     numero/=10;
-    m=num%10;
+    m=numero%10;
     numero/=10;
 
     switch(m){
@@ -137,7 +141,7 @@ int main()
         case 3:
             cout<<"CCC";break;
         case 4:
-            cout<<CD";break;
+            cout<<"CD";break;
         case 5:
             cout<<"D";break;
         case 6:
